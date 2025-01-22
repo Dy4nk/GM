@@ -7,23 +7,48 @@
     <title>LR</title>
 </head>
 <body>
-    <div class="grid-bg">
+    <div class="preloader">
+        <div class="container">
+            <div class="droplet" id="n1"></div>
+            <div class="droplet" id="n2"></div>
+            <div class="droplet" id="n3"></div>
+            <div class="droplet" id="n4"></div>
+            <div class="droplet" id="n5"></div>
+            <div class="droplet" id="n6"></div>
+            <div class="droplet" id="n7"></div>
+            <div class="droplet" id="n8"></div>
+            <div class="droplet" id="n9"></div>
+            <div class="droplet" id="n10"></div>
+        </div>
+    </div>
+
+    <div class="acrylic-bg">
         <header>
             <a href="#">
-                <div class="container">
-                    <div class="droplet" id="no1"></div>
-                    <div class="droplet" id="no2"></div>
-                    <div class="droplet" id="no3"></div>
-                    <div class="droplet" id="no4"></div>
-                    <div class="droplet" id="no5"></div>
-                    <div class="droplet" id="no6"></div>
-                    <div class="droplet" id="no7"></div>
-                    <div class="droplet" id="no8"></div>
-                    <div class="droplet" id="no9"></div>
-                    <div class="droplet" id="no10"></div>
-                </div>
+                <img src="./assets/logo.png" alt="Logo" class="logo">
             </a>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#">Tools</a></li>
+                    <li class="nav-item"><a href="#">Test</a></li>
+                    <li class="nav-item"><a href="#">Test 2</a></li>
+                    <li class="nav-item"><a href="#">Test 3</a></li>
+                </ul>
+            </nav>
         </header>
+        <main>
+            <span>test</span>
+        </main>
     </div>
+    <script>
+        window.addEventListener('load', () => {
+            const preloader = document.querySelector('.preloader');
+            const mainContent = document.querySelector('.acrylic-bg');
+            
+            preloader.style.display = 'none';
+            mainContent.style.visibility = 'visible';
+            mainContent.style.opacity = '1';
+        });
+    </script>    
 </body>
 </html>
